@@ -2,7 +2,7 @@ package com.metehan.pokedex.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val LightBlue = Color(0xFFBAC7FF)
+val LightBlue = Color(0xFF99A5D8)
 val lightGrey = Color(0xFFAAAAAA)
 
 val HPColor = Color(0xFFF5FF00)

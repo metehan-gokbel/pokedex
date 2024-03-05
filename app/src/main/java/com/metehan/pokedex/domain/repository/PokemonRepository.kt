@@ -5,5 +5,5 @@ import com.metehan.pokedex.data.remote.responses.PokemonList
 
 interface PokemonRepository {
     suspend fun getPokemonList(limit: Int, offset: Int): PokemonList
-    suspend fun getPokemonInfo(pokemonName: String): Pokemon
+    suspend fun getPokemonDetail(pokemonName: String): Pokemon
 }

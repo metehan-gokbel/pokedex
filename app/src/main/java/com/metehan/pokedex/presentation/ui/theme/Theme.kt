@@ -10,15 +10,15 @@ import androidx.compose.ui.graphics.Color
 
 private val DarkColorScheme = darkColorScheme(
     primary = Color.Yellow,
-    secondary = Color(0xFF101010),
+    background = Color(0xFF101010),
     onBackground = Color.White,
     surface = Color(0xFF303030),
-    onSurface = Color.White
+    onSurface = Color.White,
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = Color.Blue,
-    secondary = LightBlue,
+    background = LightBlue,
     onBackground = Color.Black,
     surface = Color.White,
     onSurface = Color.Black
@@ -48,7 +48,7 @@ fun PokedexTheme(
     }
 
     MaterialTheme(
-        colorScheme = colorScheme,
+        colorScheme = colors,
         typography = Typography,
         content = content
     )

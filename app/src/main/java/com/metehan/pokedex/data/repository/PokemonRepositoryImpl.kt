@@ -13,8 +13,8 @@ class PokemonRepositoryImpl @Inject constructor(private val api: PokeAPI): Pokem
         return api.getPokemonList(limit = limit, offset =  offset)
     }
 
-    override suspend fun getPokemonInfo(pokemonName: String): Pokemon {
-        return api.getPokemonInfo(pokemonName = pokemonName)
+    override suspend fun getPokemonDetail(pokemonName: String): Pokemon {
+        return api.getPokemonDetail(pokemonName = pokemonName)
     }
 
 }
