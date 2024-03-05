@@ -48,7 +48,7 @@ fun PokemonSearchBar(
                 .background(Color.White, CircleShape)
                 .padding(horizontal = 20.dp, vertical = 12.dp)
                 .onFocusChanged {
-                    isHintDisplayed = !it.isFocused
+                    isHintDisplayed = !it.isFocused && text.isNotEmpty()
                 }
         )
         if(isHintDisplayed) {

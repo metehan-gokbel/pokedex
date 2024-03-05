@@ -9,8 +9,8 @@ import java.lang.Exception
 
 import javax.inject.Inject
 
-class GetPokemonInfoUseCase @Inject constructor(private val repository: PokemonRepository){
-    suspend fun executePokemonInfo(pokemonName: String): Flow<Resource<Pokemon>> = flow {
+class GetPokemonDetailUseCase @Inject constructor(private val repository: PokemonRepository){
+    fun executePokemonInfo(pokemonName: String): Flow<Resource<Pokemon>> = flow {
         try {
             emit(Resource.Loading())
             val response = repository.getPokemonDetail(pokemonName= pokemonName)
